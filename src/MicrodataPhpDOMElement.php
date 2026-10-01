@@ -166,6 +166,7 @@ final class MicrodataPhpDOMElement extends \DOMElement {
 	 *
 	 * @return list<string>
 	 *   An array of tokens.
+	 * @psalm-pure
 	 */
 	protected function tokenList($string): array {
 		return preg_split('/\s+/', trim($string));
